@@ -197,7 +197,7 @@ const SERVICES = [
     MdbModalService,
     provideHttpClient(withXhr(), withInterceptorsFromDi()),
     provideTranslateService({
-        loader: provideTranslateHttpLoader({ prefix: '/assets/i18n/', suffix: '.json' }),
+        loader: provideTranslateHttpLoader({ prefix: 'assets/i18n/', suffix: '.json' }),
         fallbackLang: 'en',
     }),
     provideAppInitializer(() => inject(LanguageService).ready()),
